@@ -1,0 +1,179 @@
+/* Estilos generales para el body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #eee8e8;
+    min-height: 100vh; /* Asegúrate de que el body ocupe al menos la altura completa de la ventana */
+}
+
+/* Estilos específicos para la clase 'inicio' */
+body.inicio {
+    background-image: url('img/fs1.jpeg');
+}
+
+/* Estilos específicos para la clase 'gestor' */
+body.gestor {
+    background-image: url('img/equipofondo.webp');
+}
+
+/* Botones */
+.btn {
+    background-color: rgba(57, 85, 175, 0.2);
+    color: white;
+    border: 2px solid #d6d0d0;
+    font-size: 23px;
+    font-family: cursive;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Tablas */
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #1c856b;
+    color: white;
+}
+
+/* Titulo */
+.titulo {
+    font-size: 130px;
+    color: rgb(245, 64, 40);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Formulario */
+.formulario-container {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgba(94, 138, 231, 0.3);
+    color: antiquewhite;
+    font-size: 25px;
+    width: 100%;
+}
+
+/* Contenedor de tabla */
+.table-container {
+    background-color: rgba(67, 114, 53, 0.6);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    width: 100%;
+}
+
+/* Contenedor de jugadores */
+.jugadores-container {
+    max-width: 100%;
+    margin: auto;
+}
+
+/* Botones de acciones */
+.botones-acciones {
+    text-align: center;
+}
+
+/* Presentación */
+#presentacion {
+    text-align: center;
+    margin-top: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#presentacion p {
+    font-size: 60px;
+    margin: 120px 0;
+    color: rgb(0, 0, 0);
+    background-color: rgba(201, 173, 150, 0.5);
+    border: 4px solid #181717;
+    border-radius: 15px;
+}
+
+/* Botón iniciar gestión */
+#btnIniciarGestion {
+    margin-top: 0px;
+    padding: 15px 30px;
+    font-size: 38px;
+}
+
+/* Media Queries para hacer la página responsive */
+@media screen and (max-width: 768px) {
+    .titulo {
+        font-size: 60px;
+    }
+    .formulario-container {
+        font-size: 20px;
+    }
+    .table-container {
+        font-size: 20px;
+    }
+    #presentacion p {
+        font-size: 30px;
+        margin: 60px 0;
+    }
+    #btnIniciarGestion {
+        padding: 10px 20px;
+        font-size: 24px;
+    }
+}
+
+/* Media Queries para pantallas entre 469px y 1519px */
+@media screen and (min-width: 469px) and (max-width: 1519px) {
+    body {
+        padding: 10px; /* Ajusta el padding para que los elementos se ajusten mejor en pantallas medianas */
+    }
+    .titulo {
+        font-size: 100px;
+    }
+    .formulario-container {
+        font-size: 22px;
+    }
+    .table-container {
+        font-size: 18px;
+    }
+    #presentacion p {
+        font-size: 50px;
+        margin: 100px 0;
+    }
+    #btnIniciarGestion {
+        padding: 12px 25px;
+        font-size: 32px;
+    }
+}
+
+/* Asegura que el contenido principal ocupe el 100% de la altura disponible */
+html, body {
+    height: 100%;
+}
+
+#gestorEquipo {
+    min-height: calc(100vh - 40px); /* Ajusta para tener en cuenta el padding del body */
+    display: flex;
+    flex-direction: column;
+}
+
+.table-container {
+    flex: 1;
+    overflow-y: auto; /* Asegura que las tablas se puedan desplazar si son demasiado altas */
+}
+
+footer{
+    color: #181717;
+    font-size: 30px;
+    margin-top: 60px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
